@@ -9,7 +9,7 @@ Fulmine Labs LLC
 ## Overview
 
 The problem: The current automated tests of the excellent, open source, OHIF Basic Viewer are mainly functional in nature [(unit and end-to-end)](https://docs.ohif.org/development/testing).
-In order to fush out any issues and increase confidence in the stability of this interface, it would be good to extend the available automated tests to also cover non-functional scenarios, such as performance. 
+In order to flush out any issues and increase confidence in the stability of this interface, it would be good to extend the available automated tests to also cover non-functional scenarios, such as performance. 
 
 This Python/Selenium code, run from Jupyter notebook or Jupyter lab, performs a set of pseudo-randomized (fuzz) actions on the OHIF Basic Viewer across a number of studies. The code has the capabilty of graphing resource usage.
 The number of iterations of the actions on each study and the number of studies can be tuned such that the script simulates heavy, but somewhat realistic usage of this interface over a period of time that simulates a long usage session (for example 8+ hours). 
