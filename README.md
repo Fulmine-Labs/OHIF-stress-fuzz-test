@@ -1,4 +1,4 @@
-# OHIF stress/fuzz test
+# OHIF Stress/Fuzz test
 
 Simulate heavy usage of the Open Health Imaging Foundation (OHIF) zero-footprint medical image viewer.
 
@@ -32,19 +32,29 @@ Access to the OHIF Viewer website at: https://viewer.ohif.org/
 ## Usage
 
 1) Install Anaconda
-2) Install Brave and Chrome if they are not already present
+2) Install the Brave and Chrome browers, if they are not already present
 3) Clone the OHIF-stress-fuzz-test repository to your local machine and navigate to the cloned directory in Anaconda Powershell Prompt: 'cd LNRoutingVizualization'
 4) Install the dependencies listed in requirements.txt with `'pip install -r requirements.txt'`
 5) Open Jupyter Notebook or Jupyter Lab from Anaconda. It should start in Brave.
 6) Open _OHIF stress fuzz test.ipynb_ from the cloned directory inside Jupyter
-7) Edit any test parameters in the first cell, as needed
-8) In Jupyter 'Run All Cells'. 
+7) Edit any test parameters in the first cell, as needed. Currently, the following parameters can be set:
+* Random _seed_ Set to _None_ for a random seed or use a seed from a previous run for repeatability. The seed is recorded in the log file for the run.
+* _verbose_, True or False. True will enable logging in Jupyter Notebook, but all message will be logged to the log file for the run.
+* _study_count_ and _action_count_. The number of studies to select and actions to perform on each study.
+9) In Jupyter, 'Run All Cells'
 
 ## Screenshots/Recordings
 
 If successful the running test should look something like this:
 
 [![Video](https://www.dropbox.com/scl/fi/ko5j0ughrvm6aoa3yvywp/stress_test_1.png?rlkey=mohp2tt6kz863y14cluyjwfrl&raw=1)](https://www.dropbox.com/scl/fi/0oiqerzekj1otofjvqclj/stress_test_1.mp4?rlkey=lk0wyengm15pd5okdyhqmqopa&raw=1)
+
+The test records resource usage and on completion will create plots of:
+1) System CPU and memory usage
+2) The system handle count
+3) Chrome browser memory usage (see below)
+
+![alt text](chrome_memory_usage.png "Chrome Memory Usage")
 
 ## Testing
 
