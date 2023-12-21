@@ -37,7 +37,7 @@ The current stable version of the project is 0.1.0 See the [CHANGELOG.md](./CHAN
 
 1) Install Anaconda
 2) Install the Brave and Chrome browers, if they are not already present
-3) Clone the OHIF-stress-fuzz-test repository to your local machine and navigate to the cloned directory in Anaconda Powershell Prompt: 'cd LNRoutingVizualization'
+3) Clone the OHIF-stress-fuzz-test repository to your local machine and navigate to the cloned directory in Anaconda Powershell Prompt: 'cd OHIF-stress-fuzz-test'
 4) Install the dependencies listed in requirements.txt with `'pip install -r requirements.txt'`
 5) Open Jupyter Notebook or Jupyter Lab from Anaconda. It should start in Brave.
 6) Open _OHIF stress fuzz test.ipynb_ from the cloned directory inside Jupyter
