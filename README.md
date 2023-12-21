@@ -12,9 +12,13 @@ The problem: The current automated tests of the excellent, open source, OHIF Bas
 In order to flush out any issues and increase confidence in the stability of this interface, it would be good to extend the available automated tests to also cover non-functional scenarios, such as performance. 
 
 This Python/Selenium code, run from Jupyter notebook or Jupyter lab, performs a set of pseudo-randomized (fuzz) actions on the OHIF Basic Viewer across a number of studies. 
+
 The script has the capabilty of graphing resource usage.
+
 The number of iterations of the actions on each study and the number of studies can be tuned such that the script simulates heavy, but somewhat realistic usage of this interface over a period of time that simulates a long usage session (for example 8+ hours). 
+
 The test logs resource usage during these iterations, which can be graphed after test completion.
+
 In order for the test actions to run quickly and minimize user interface dependencies, which can be a notorious issue with UI based tests, there are no explicit verifications during the test. Therefore a passed test consists of: 
 1) Completion of all iterations without encountering stability issues in the interface. This can be confirmed after a completed run by checking the test logs for unexpected conditions.
 2) Non-increasing resource usage, after the initial startup.
