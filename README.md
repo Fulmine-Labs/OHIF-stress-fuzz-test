@@ -28,10 +28,10 @@ The current stable version of the project is 0.1.0 See the [CHANGELOG.md](./CHAN
 
 ## Prerequisites
 
-Anaconda, with an environment having the Python libraries listed in [requirements.txt](./requirements.txt)
-Brave
-Chrome
-Access to the OHIF Viewer website at: https://viewer.ohif.org/
+* Anaconda, with an environment having the Python libraries listed in [requirements.txt](./requirements.txt)
+* Brave
+* Chrome
+* Access to the OHIF Viewer website at: https://viewer.ohif.org/
 
 ## Usage
 
