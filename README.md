@@ -43,7 +43,7 @@ The current stable version of the project is 0.1.0 See the [CHANGELOG.md](./CHAN
 6) Open _OHIF stress fuzz test.ipynb_ from the cloned directory inside Jupyter
 7) Edit any test parameters in the first cell, as needed. Currently, the following parameters can be set:
 * Random _seed_ Set to _None_ for a random seed or use a seed from a previous run for repeatability. The seed is recorded in the log file for the run.
-* _verbose_, True or False. True will enable logging in Jupyter Notebook, but all message will be logged to the log file for the run.
+* _verbose_, True or False. True will enable logging in Jupyter Notebook, but all messages will be logged to the log file for the run.
 * _study_count_ and _action_count_. The number of studies to select and actions to perform on each study.
 8) In Jupyter, 'Run All Cells'
 
