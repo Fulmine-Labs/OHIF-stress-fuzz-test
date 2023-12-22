@@ -13,11 +13,9 @@ In order to flush out any issues and increase confidence in the stability of thi
 
 This Python/Selenium code, run from Jupyter notebook or Jupyter lab, performs a set of pseudo-randomized (fuzz) actions on the OHIF Basic Viewer across a number of studies. 
 
-The script has the capabilty of graphing resource usage.
-
 The number of iterations of the actions on each study and the number of studies can be tuned such that the script simulates heavy, but somewhat realistic usage of this interface over a period of time that simulates a long usage session (for example 8+ hours). 
 
-The test logs resource usage during these iterations, which can be graphed after test completion.
+The test logs resource usage during these iterations, which can be graphed after test completion/abort.
 
 In order for the test actions to run quickly and minimize user interface dependencies, which can be a notorious issue with UI based tests, there are no explicit verifications during the test. Therefore a passed test consists of: 
 1) Completion of all iterations without encountering stability issues in the interface. This can be confirmed after a completed run by checking the test logs for unexpected conditions.
@@ -53,7 +51,7 @@ If successful the running test should look something like this:
 
 [![Video](https://www.dropbox.com/scl/fi/ko5j0ughrvm6aoa3yvywp/stress_test_1.png?rlkey=mohp2tt6kz863y14cluyjwfrl&raw=1)](https://www.dropbox.com/scl/fi/0oiqerzekj1otofjvqclj/stress_test_1.mp4?rlkey=lk0wyengm15pd5okdyhqmqopa&raw=1)
 
-The test records resource usage and on completion will create plots of:
+The test records resource usage and on completion (or when the last cell is executed) will create plots of:
 1) System CPU and memory usage
 2) The system handle count
 3) Chrome browser memory usage (see below)
